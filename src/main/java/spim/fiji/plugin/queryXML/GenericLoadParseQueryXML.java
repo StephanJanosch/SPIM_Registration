@@ -581,7 +581,7 @@ public class GenericLoadParseQueryXML<
 		return true;
 	}
 	
-	protected boolean queryDetails()
+	public boolean queryDetails()
 	{
 		// all attibutes
 		this.attributeInstancesToProcess = new HashMap< String, List< Entity > >();
@@ -656,7 +656,7 @@ public class GenericLoadParseQueryXML<
 		return choiceList;
 	}
 
-	protected boolean tryParsing( final String xmlfile, final boolean parseAllTypes )
+	public boolean tryParsing( final String xmlfile, final boolean parseAllTypes )
 	{
 		this.xmlfilename = xmlfile;
 		this.message1 = neutralMsg1;
