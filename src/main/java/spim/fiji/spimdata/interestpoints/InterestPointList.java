@@ -43,14 +43,7 @@ public class InterestPointList
 	/**
 	 * @return - the list of interest points, tries to load it from disk if not available
 	 */
-	public List< InterestPoint > getInterestPoints() {
-
-        //Stephan Janosch: added loading from disk if null. I see no reason to delegate this to the caller. The caller
-        // should not care about the inner state of this object.
-        if (this.interestPoints==null)
-            loadInterestPoints();
-        return this.interestPoints;
-    }
+	public List< InterestPoint > getInterestPoints() {return this.interestPoints;}
 
 
 
