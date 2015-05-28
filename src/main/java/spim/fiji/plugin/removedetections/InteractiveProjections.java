@@ -156,7 +156,13 @@ public class InteractiveProjections
 			return 2;
 	}
 
-	protected List< InterestPoint > loadInterestPoints( final SpimData2 spimData, final ViewId id, final String label )
+    /**
+     * @param spimData
+     * @param id
+     * @param label
+     * @return
+     */
+    protected List< InterestPoint > loadInterestPoints( final SpimData2 spimData, final ViewId id, final String label )
 	{
 		final ViewInterestPoints interestPoints = spimData.getViewInterestPoints();
 		final ViewInterestPointLists lists = interestPoints.getViewInterestPointLists( id );
