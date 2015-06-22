@@ -29,7 +29,6 @@ public class Detection_Verfication implements PlugIn {
     private static final int UPPER_THRESHOLD = 20000;
     private static final int ZERO = 0;
 
-    @Override
     public void run(String arg) {
 
         // ask for everything but the channels
